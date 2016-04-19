@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let urlString = "http://swapi.com/api/people/1/"
+        let urlString = "http://swapi.co/api/people/1/"
         let session = NSURLSession.sharedSession()
         let url = NSURL(string: urlString)!
         
@@ -22,10 +22,16 @@ class ViewController: UIViewController {
             
             if let responseData = data {
                 
-            let json = NSJSONSerialization.JSONObjectWithData
-                        (responseData, options: NSJSONReadingOptions.AllowFragments)
+                do {
+                
+                    let json = try NSJSONSerialization.JSONObjectWithData(responseData, options: NSJSONReadingOptions.AllowFragments)
                     
-            print(json)
+                    print(json)
+                }
+                
+                catch {
+                    print("Could not serialize")
+                }
      
             }
             
