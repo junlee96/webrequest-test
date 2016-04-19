@@ -14,6 +14,7 @@
 		844E08C01CC5CB390095B1E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844E08BE1CC5CB390095B1E6 /* LaunchScreen.storyboard */; };
 		844E08CB1CC5CB390095B1E6 /* webrequest_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E08CA1CC5CB390095B1E6 /* webrequest_testTests.swift */; };
 		844E08D61CC5CB3A0095B1E6 /* webrequest_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E08D51CC5CB3A0095B1E6 /* webrequest_testUITests.swift */; };
+		84D2A3B21CC622080027FFED /* SWPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2A3B11CC622080027FFED /* SWPerson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		844E08D11CC5CB3A0095B1E6 /* webrequest-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "webrequest-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844E08D51CC5CB3A0095B1E6 /* webrequest_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webrequest_testUITests.swift; sourceTree = "<group>"; };
 		844E08D71CC5CB3A0095B1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D2A3B11CC622080027FFED /* SWPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPerson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		844E08B41CC5CB380095B1E6 /* webrequest-test */ = {
 			isa = PBXGroup;
 			children = (
+				84D2A3B01CC621EA0027FFED /* Model */,
 				844E08B51CC5CB380095B1E6 /* AppDelegate.swift */,
 				844E08B71CC5CB390095B1E6 /* ViewController.swift */,
 				844E08B91CC5CB390095B1E6 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				844E08D71CC5CB3A0095B1E6 /* Info.plist */,
 			);
 			path = "webrequest-testUITests";
+			sourceTree = "<group>";
+		};
+		84D2A3B01CC621EA0027FFED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84D2A3B11CC622080027FFED /* SWPerson.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				844E08B81CC5CB390095B1E6 /* ViewController.swift in Sources */,
 				844E08B61CC5CB380095B1E6 /* AppDelegate.swift in Sources */,
+				84D2A3B21CC622080027FFED /* SWPerson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +499,7 @@
 				844E08DC1CC5CB3A0095B1E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		844E08DD1CC5CB3A0095B1E6 /* Build configuration list for PBXNativeTarget "webrequest-testTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +508,7 @@
 				844E08DF1CC5CB3A0095B1E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		844E08E01CC5CB3A0095B1E6 /* Build configuration list for PBXNativeTarget "webrequest-testUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +517,7 @@
 				844E08E21CC5CB3A0095B1E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
