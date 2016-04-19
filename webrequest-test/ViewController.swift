@@ -12,14 +12,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let urlString = "http://swapi.com/api/people/1/"
+        let session = NSURLSession.sharedSession()
+        let url = NSURL(string: urlString)!
+        
+        session.dataTaskWithURL(url) { (data: NSData?, response:
+            NSURLResponse?, error: NSError?) -> Void in
+            
+            if let responseData = data {
+                
+            let json = NSJSONSerialization.JSONObjectWithData
+                        (responseData, options: NSJSONReadingOptions.AllowFragments)
+                    
+            print(json)
+     
+            }
+            
+            
+        }.resume()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+  
 }
 
